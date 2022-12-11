@@ -38,7 +38,7 @@ class _CartScreenState extends State<CartScreen> {
                                 height: 36,
                               ),
                               title: Text('${value.cartItems[index][0]}'),
-                              subtitle: Text('Rs' + value.cartItems[index][1]),
+                              subtitle: Text('Rs.' + value.cartItems[index][1]),
                             ),
                           ),
                         );
