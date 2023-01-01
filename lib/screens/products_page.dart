@@ -18,9 +18,10 @@ class _ProductsPageState extends State<ProductsPage> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: ((context) {
-            return const CartScreen();
-          })));
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const CartScreen()),
+          );
         },
         backgroundColor: Colors.black,
         child: const Icon(Icons.shopping_bag),
@@ -63,7 +64,7 @@ class _ProductsPageState extends State<ProductsPage> {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 24),
               child: Text(
-                'Fesh items',
+                'Fresh items',
                 style: TextStyle(
                   fontSize: 16,
                 ),

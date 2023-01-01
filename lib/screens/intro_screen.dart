@@ -26,9 +26,7 @@ class IntroPage extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          const SizedBox(
-            height: 24,
-          ),
+          const Spacer(),
           const Text(
             'Order fresh groceries',
             textAlign: TextAlign.center,

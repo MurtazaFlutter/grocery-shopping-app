@@ -1,14 +1,12 @@
-// ignore_for_file: must_be_immutable
-
 import 'package:flutter/material.dart';
 
 class GroceryItemTile extends StatelessWidget {
   final String itemName;
-  final Color color;
+  final color;
   final String imagePath;
   final String itemPrice;
-  void Function()? onPress;
-  GroceryItemTile({
+  final void Function()? onPress;
+  const GroceryItemTile({
     super.key,
     required this.itemName,
     required this.color,
@@ -34,7 +32,7 @@ class GroceryItemTile extends StatelessWidget {
             Text(itemName),
             MaterialButton(
               onPressed: onPress,
-              color: color,
+              color: color[700],
               child: Text(
                 'Rs $itemPrice',
                 style: const TextStyle(
